@@ -1,4 +1,4 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
 * Студент: [Дмитрий Килин](https://up.htmlacademy.ru/adaptive/22/user/997093).
 * Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0).
