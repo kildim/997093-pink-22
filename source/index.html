@@ -1,12 +1,286 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a href="#" class="pink-logo--text-only-direct" aria-label="переход на главную страницу">
+    <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8
+        7.36H2.53v6.8A1.28 1.28 0 011.27 23 1.27 1.27 0 010 21.61V1.55zm8.07 10.97c3.7 0
+        6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04zM21.6 1.39A1.28 1.28 0 0122.85
+        0a1.27 1.27 0 011.27 1.39V21.6A1.28 1.28 0 0122.86 23a1.27 1.27 0 01-1.27-1.39V1.4zM30.67 1.42A1.28
+        1.28 0 0131.93.17h.34a1.54 1.54 0 011.29.74l13.6 17.4V1.36A1.24 1.24 0 0148.39.12a1.23 1.23 0 011.23
+        1.24v20.3a1.14 1.14 0 01-1.15 1.17h-.13a1.7 1.7 0 01-1.31-.78L33.12 4.25v17.4a1.26 1.26 0 01-1.2 1.25
+        1.23 1.23 0 01-1.2-1.25V1.42h-.05zM55.94 1.39A1.28 1.28 0 0157.2 0a1.27 1.27 0 011.26
+        1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 011.21 1.26 1.29 1.29 0 01-.41.9l-7.95 7.9 8.57
+        10.52c.23.26.35.6.35.94a1.31 1.31 0 01-1.34 1.28 1.23 1.23 0 01-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27
+        1.27 0 01-1.26 1.27 1.26 1.26 0 01-1.26-1.27V1.4h-.01z" fill="#fff"
+      />
+    </svg>
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            конкурс
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a>
+            html academy
+          </a>
+        </li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      </ul>
+    </div>
+  </nav>
+  <p class="page-header__lead">
+    Взгляните на жизнь
+    иначе!
+  </p>
+  <div class="page-header__download-refs-wrapper">
+    <a href="https://www.apple.com/ru/app-store/" class="page-header__default-ref"
+       aria-label="скачивание из источника по умолчанию">
+    </a>
+    <a href="https://www.apple.com/ru/app-store/" class="page-header__appstore-ref"
+       aria-label="скачивание из магазина эпл">
+      <img src="img/apple-logo.svg" alt="логотип эпл">
+    </a>
+    <a href="https://play.google.com/store/apps" class="page-header__play-market-ref"
+       aria-label="скачивание из магазина гугл">
+      <img src="img/android-logo.svg" alt="логотип андроид">
+    </a>
+    <a href="https://www.microsoft.com/ru-RU/store/apps" class="page-header__ms-store-ref"
+       aria-label="скачивание из магазина майкрософт">
+      <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
+    </a>
+    <p class="page-header__download-refs-description">
+      Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+    </p>
+  </div>
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden">Сообщество любителей фотографии - Взгляните на жизнь иначе!</h1>
+  <section class="section-slogans">
+    <h2 class="visually-hidden">Наша миссия</h2>
+    <div class="section-slogans__wrapper">
+      <p class="section-slogans__slogan">
+        Устали от серости мегаполиса?
+      </p>
+      <p class="section-slogans__slogan">
+        Нам есть, что вам предложить!
+      </p>
+    </div>
+  </section>
+  <section class="section-features">
+    <h2 class="visually-hidden">Для чего наше приложение</h2>
+    <div class="section-features__wrapper">
+      <h3 class="section-features__feature-title">
+        Поднимает настроение
+      </h3>
+      <p class="section-features__feature-description">
+        Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+      </p>
+      <h3 class="section-features__feature-title">
+        Меняет мир вокруг
+      </h3>
+      <p class="section-features__feature-description">
+        Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+      </p>
+      <h3 class="section-features__feature-title">
+        Заводит новых друзей
+      </h3>
+      <p class="section-features__feature-description">
+        Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+      </p>
+    </div>
+  </section>
+  <section class="section-reviews">
+    <h2 class="visually-hidden">Отзывы наших участников</h2>
+    <div class="section-reviews__wrapper">
+      <ul class="section-reviews__list slider__list">
+        <li class="slider__item">
+          <blockquote class="quote">
+            <cite>
+              <span class="quote__participant-name">Николай Петров</span>
+            </cite>
+            <p class="quote__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+        </li>
+      </ul>
+      <p class="section-reviews__toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+  </section>
+  <section class="section-tariffs">
+    <h2 class="visually-hidden">Стоимость сервиса</h2>
+    <div class="section-tariffs__wrapper">
+      <table class="table-tariffs">
+        <thead>
+        <tr>
+          <th scope="col">
+            <span class="table-tariffs__tariff-name">БАЗА</span>
+            <span class="table-tariffs__tariff-rate">1,99&#8239;USD</span>
+          </th>
+          <th>
+            <span class="table-tariffs__tariff-name">СТАНДАРТ</span>
+            <span class="table-tariffs__tariff-rate">3,99&#8239;USD</span>
+          </th>
+          <th>
+            <span class="table-tariffs__tariff-name">АНЛИМ</span>
+            <span class="table-tariffs__tariff-rate">9,99&#8239;USD</span>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <span class="table-tariffs__tariff-option--available">Розовый фильтр</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option--available">Розовый фильтр</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option--available">Розовый фильтр</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="table-tariffs__tariff-option--unavailable">Смайлики</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option--available">Смайлики</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option--available">Смайлики</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="table-tariffs__tariff-option--unavailable">Комментарии</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option--unavailable">Комментарии</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option--available">Комментарии</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <p class="section-reviews__toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+  </section>
 
-  </body>
+  <section class="section-contacts">
+    <h2 class="visually-hidden">Контакты для связи</h2>
+    <div class="section-contacts__wrapper">
+      <p class="section-contacts__text">
+        Остались вопросы?<br>
+        Свяжитесь с нами!
+      </p>
+      <div class="communication-mean">
+          <span class="communication-mean__appeal">
+            Звоните:
+          </span>
+        <span class="communication-mean__attribute-text">
+            <a href="tel:+78125556666" class="communication-mean__attribute-ref">+7 (812) 555-66-66</a>
+          </span>
+      </div>
+      <div class="communication-mean">
+          <span class="communication-mean__appeal">
+            Пишите:
+          </span>
+        <span class="communication-mean__attribute-text">
+            <a href="mailto:mail@htmlacademy.ru" class="communication-mean__attribute-ref">mail@htmlacademy.ru</a>
+          </span>
+      </div>
+      <div class="communication-mean">
+          <span class="communication-mean__appeal">
+            Пишите:
+          </span>
+        <span class="communication-mean__attribute-text">
+            ул. Большая<br>Конюшенная, 19/8
+          </span>
+      </div>
+    </div>
+  </section>
+  <section id="map">
+    <h2 class="visually-hidden">Интерактивная карта Яндекс</h2>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <a href="#" class="pink-logo--whole-direct" aria-label="переход на главную страницу">
+      <svg width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M71 18.55a1.29 1.29 0 011.26-1.29h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0
+        4.85-4.04 7.36-8.8 7.36h-5.44v6.8A1.28 1.28 0 0172.27 40 1.27 1.27 0 0171
+        38.61V18.55zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H73.6v9.88l5.48.04zM92.6
+        18.39A1.28 1.28 0 0193.85 17a1.27 1.27 0 011.27 1.39V38.6A1.28 1.28 0 0193.86 40a1.27 1.27 0
+        01-1.27-1.39V18.4zM101.67 18.42a1.28 1.28 0 011.26-1.25h.34a1.53 1.53 0 011.29.74l13.6 17.4V18.36a1.24
+        1.24 0 011.23-1.24 1.23 1.23 0 011.23 1.24v20.3a1.16 1.16 0 01-.32.83 1.13 1.13 0 01-.83.34h-.13a1.69
+        1.69 0 01-1.31-.78l-13.91-17.8v17.4a1.26 1.26 0 01-1.2 1.25 1.23 1.23 0 01-1.2-1.25V18.42h-.05zM126.94
+        18.39A1.28 1.28 0 01128.2 17a1.27 1.27 0 011.26 1.39v12.3l12.76-13.14c.26-.27.62-.43 1-.45a1.27 1.27 0
+        011.21 1.26 1.3 1.3 0 01-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.33 1.33 0 01-.4.92 1.29 1.29 0
+        01-.94.36 1.23 1.23 0 01-1-.58l-8.36-10.46-4.83 4.85v4.88a1.28 1.28 0 01-.78 1.17 1.26 1.26 0
+        01-1.74-1.17V18.4h-.01z" fill="#283645"
+        />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M53.9 6.59l5.03 21.14a1.42 1.42 0
+        01-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 01-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75
+        11.75 0 0116.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 01.3 29a1.42 1.42 0 01-.24-1.27L5.1 6.6C5.46
+        4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 010 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34
+        26.6h2.03a11.75 11.75 0 0111.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0111.47-10.19c5.89 0 10.75
+        4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0
+        010-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59zM25.66 29.56a9.12 9.12 0 00-.02-2.97 8.85 8.85 0
+        00-8.68-7.38 8.85 8.85 0 00-8.82 8.94 8.85 8.85 0 008.81 8.94c4.4 0 8.04-3.26 8.71-7.53zm24.94 0a8.75 8.75 0
+        00-8.58-10.23 8.75 8.75 0 00-8.58 10.23 8.73 8.73 0 008.58 7.4c4.33 0 7.91-3.2 8.58-7.4z" fill="#D22856"
+        />
+      </svg>
+    </a>
+    <ul class="social__list">
+      <!--      Иконки соц. сетей отображаются псевдоэлементами-->
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Ютьюбе"></a>
+      </li>
+    </ul>
+    <span class="page-footer__copyright">
+      Разработано
+      <!--      Иконка HTML Academy отображаются псевдоэлементом-->
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-ref"
+         aria-label="переход на страницу интенсива HTML Academy"></a>
+    </span>
+  </div>
+</footer>
+</body>
 </html>
