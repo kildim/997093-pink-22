@@ -11,7 +11,7 @@
 </head>
 <body class="page-body">
 <header class="page-header">
-  <a href="#" class="pink-logo--text-only-direct" aria-label="переход на главную страницу">
+  <a class="pink-logo-text" aria-label="Логотип сервиса Пинк">
     <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8
         7.36H2.53v6.8A1.28 1.28 0 011.27 23 1.27 1.27 0 010 21.61V1.55zm8.07 10.97c3.7 0
@@ -46,7 +46,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
             html academy
           </a>
         </li>
@@ -59,15 +59,19 @@
     иначе!
   </p>
   <div class="page-header__download-refs-wrapper">
-    <a href="https://www.apple.com/ru/app-store/" class="page-header__default-ref" aria-label="скачивание из источника по умолчанию">
+    <a href="https://www.apple.com/ru/app-store/" class="page-header__default-ref"
+       aria-label="скачивание из источника по умолчанию">
     </a>
-    <a href="https://www.apple.com/ru/app-store/" class="page-header__appstore-ref" aria-label="скачивание из магазина эпл">
+    <a href="https://www.apple.com/ru/app-store/" class="page-header__appstore-ref"
+       aria-label="скачивание из магазина эпл">
       <img src="img/apple-logo.svg" alt="логотип эпл">
     </a>
-    <a href="https://play.google.com/store/apps" class="page-header__play-market-ref" aria-label="скачивание из магазина гугл">
+    <a href="https://play.google.com/store/apps" class="page-header__play-market-ref"
+       aria-label="скачивание из магазина гугл">
       <img src="img/android-logo.svg" alt="логотип андроид">
     </a>
-    <a href="https://www.microsoft.com/ru-RU/store/apps" class="page-header__ms-store-ref" aria-label="скачивание из магазина майкрософт">
+    <a href="https://www.microsoft.com/ru-RU/store/apps" class="page-header__ms-store-ref"
+       aria-label="скачивание из магазина майкрософт">
       <img src="img/microsoft-logo.svg" alt="логотип майкрософт">
     </a>
     <p class="page-header__download-refs-description">
@@ -157,35 +161,35 @@
         <tbody>
         <tr>
           <td>
-            <span class="table-tariffs__tariff-option--available">Розовый фильтр</span>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--available">Розовый фильтр</span>
           </td>
           <td>
-            <span class="table-tariffs__tariff-option--available">Розовый фильтр</span>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--available">Розовый фильтр</span>
           </td>
           <td>
-            <span class="table-tariffs__tariff-option--available">Розовый фильтр</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span class="table-tariffs__tariff-option--unavailable">Смайлики</span>
-          </td>
-          <td>
-            <span class="table-tariffs__tariff-option--available">Смайлики</span>
-          </td>
-          <td>
-            <span class="table-tariffs__tariff-option--available">Смайлики</span>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--available">Розовый фильтр</span>
           </td>
         </tr>
         <tr>
           <td>
-            <span class="table-tariffs__tariff-option--unavailable">Комментарии</span>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--unavailable">Смайлики</span>
           </td>
           <td>
-            <span class="table-tariffs__tariff-option--unavailable">Комментарии</span>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--available">Смайлики</span>
           </td>
           <td>
-            <span class="table-tariffs__tariff-option--available">Комментарии</span>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--available">Смайлики</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--unavailable">Комментарии</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--unavailable">Комментарии</span>
+          </td>
+          <td>
+            <span class="table-tariffs__tariff-option table-tariffs__tariff-option--available">Комментарии</span>
           </td>
         </tr>
         </tbody>
@@ -202,33 +206,35 @@
     <h2 class="visually-hidden">Контакты для связи</h2>
     <div class="section-contacts__wrapper">
       <p class="section-contacts__text">
-        Остались вопросы?<br>
+        Остались вопросы?
+      </p>
+      <p>
         Свяжитесь с нами!
       </p>
-      <div class="communication-mean">
+      <address class="communication-mean">
           <span class="communication-mean__appeal">
             Звоните:
           </span>
         <span class="communication-mean__attribute-text">
             <a href="tel:+78125556666" class="communication-mean__attribute-ref">+7 (812) 555-66-66</a>
           </span>
-      </div>
-      <div class="communication-mean">
+      </address>
+      <address class="communication-mean">
           <span class="communication-mean__appeal">
             Пишите:
           </span>
         <span class="communication-mean__attribute-text">
             <a href="mailto:mail@htmlacademy.ru" class="communication-mean__attribute-ref">mail@htmlacademy.ru</a>
           </span>
-      </div>
-      <div class="communication-mean">
-          <span class="communication-mean__appeal">
-            Пишите:
-          </span>
+      </address>
+      <address class="communication-mean">
+        <span class="communication-mean__appeal">
+          Пишите:
+        </span>
         <span class="communication-mean__attribute-text">
-            ул. Большая<br>Конюшенная, 19/8
-          </span>
-      </div>
+          ул. Большая<br>Конюшенная, 19/8
+        </span>
+      </address>
     </div>
   </section>
   <section id="map">
@@ -237,7 +243,7 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="#" class="pink-logo--whole-direct" aria-label="переход на главную страницу">
+    <a class="page-footer__logo pink-logo pink-logo--whole-direct">
       <svg width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M71 18.55a1.29 1.29 0 011.26-1.29h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0
         4.85-4.04 7.36-8.8 7.36h-5.44v6.8A1.28 1.28 0 0172.27 40 1.27 1.27 0 0171
@@ -263,22 +269,25 @@
         />
       </svg>
     </a>
-    <ul class="social">
-      <!--      Иконки соц. сетей отображаются псевдоэлементами-->
+    <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" aria-label="Мы в Твиттере"></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+           aria-label="Мы в Фейсбуке"></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Ютьюбе"></a>
+        <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"
+           aria-label="Мы в Ютьюбе"></a>
       </li>
     </ul>
-    <span class="page-footer__copyright">
+    <span class="page-footer__copyright copyright">
       Разработано
-      <!--      Иконка HTML Academy отображаются псевдоэлементом-->
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-ref" aria-label="переход на страницу интенсива HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__copyright-ref"
+         aria-label="переход на страницу интенсива HTML Academy">
+        <img src="img/html-academy-logo.svg " width="27" height="34">
+      </a>
     </span>
   </div>
 </footer>
