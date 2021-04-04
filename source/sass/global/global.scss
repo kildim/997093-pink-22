@@ -1,15 +1,5 @@
 @import "variables.scss";
 
-body {
-  font-style: normal;
-  margin: 0;
-  background-color: $basic-white;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -17,6 +7,15 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.debug {
+  outline: red 3px solid;
+  outline-offset: -3px;
+}
+
+.content {
+  margin: auto 20px;
 }
 
 .visually-hidden {

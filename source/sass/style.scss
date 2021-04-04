@@ -1,7 +1,11 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/mixins.scss";
 
 // blocks
-@import "blocks/page.scss";
+@import "blocks/page";
+@import "blocks/page-body";
+@import "blocks/page-header";
+@import "blocks/section-slogans";
 

@@ -1,0 +1,13 @@
+@import "../global/variables.scss";
+
+.section-slogans {
+  background-color: $basic-white;
+  &__slogan {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    color: $cian;
+  }
+}
