@@ -1,3 +1,15 @@
-@mixin content ($margins: 20px) {
-  margin: $margins auto;
+@mixin for-phone-only {
+  @media (max-width: 659px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 660px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
 }

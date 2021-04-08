@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "../global/mixins.scss";
 
 img {
   max-width: 100%;
@@ -15,9 +16,20 @@ a {
 }
 
 .content {
-  margin: auto 20px;
+  @include for-phone-only {
+    //width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include for-tablet-portrait-up {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include for-desktop-up {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
