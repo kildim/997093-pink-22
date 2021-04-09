@@ -8,9 +8,11 @@
     height: 66px;
     align-items: center;
   }
+
   &__pink-logo {
     padding-top: 4px;
   }
+
   &__toggle {
     position: relative;
     width: 50px;
@@ -33,4 +35,41 @@
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 23px;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.main-nav.main-nav--opened {
+  background-color: $cian;
+}
+.main-nav.main-nav--opened .main-nav__menu-box {
+  height: 69px;
+  border-bottom: 1px solid $basic-black;
+}
+.main-nav--closed .page-header__site-nav-list {
+  display: none;
+}
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
