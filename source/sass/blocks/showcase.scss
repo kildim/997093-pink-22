@@ -53,6 +53,11 @@
     width: 280px;
   }
   &__download-refs-box {
+    display: flex;
+    justify-content: space-between;
+    width: 204px;
+    align-items: flex-end;
+    margin-top: 31px;
   }
   &__download-refs-description {
     font-family: "Open Sans", "Verdana", sans-serif;
