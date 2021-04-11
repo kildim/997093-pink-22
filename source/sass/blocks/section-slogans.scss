@@ -2,12 +2,27 @@
 
 .section-slogans {
   background-color: $basic-white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='32'%3E%3Cpolygon points='0,32 320,0 320,32' fill='#{$basic-light-gray-svg}' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 32px;
+
+  height: 208px;
+  margin: 0;
+  padding-top: 39px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &__slogan {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Verdana", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 29px;
     color: $cian;
+    text-align: center;
+    margin: 0 0 29px 0;
   }
 }
