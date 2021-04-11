@@ -3,13 +3,17 @@
 @import "global/mixins.scss";
 @import "global/global.scss";
 
-// blocks
-@import "blocks/page";
-@import "blocks/page-body";
-@import "blocks/page-header";
-@import "blocks/main-nav";
-@import "blocks/showcase.scss";
-@import "blocks/section-slogans";
-@import "blocks/section-features";
-@import "blocks/section-reviews";
-@import "blocks/slider";
+//TODO
+//только для этапа разработки
+@import "utils/debug";
+
+// component
+@import "component/page";
+@import "component/page-body";
+@import "component/page-header";
+@import "component/main-nav";
+@import "component/showcase.scss";
+@import "component/section-slogans";
+@import "component/section-features";
+@import "component/section-reviews";
+@import "component/slider";

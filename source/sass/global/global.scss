@@ -10,11 +10,6 @@ a {
   text-decoration: none;
 }
 
-.debug {
-  outline: red 3px solid;
-  outline-offset: -3px;
-}
-
 .content {
   @include for-phone-only {
     //width: 280px;
