@@ -4,16 +4,32 @@
   height: 277px;
   color: $basic-white;
   border-collapse: collapse;
-  th {
+  &__table-header {
+    position: relative;
     background-color: $special-dark-cian;
     height: 83px;
     padding-bottom: 14px;
-    &:not(:first-child):not(:last-child) {
+    border-bottom: none;
+    background-clip: padding-box;
+    &:not(:first-child) {
       border-left: $basic-white 2px solid;
+    }
+    &:not(:last-child) {
       border-right: $basic-white 2px solid;
     }
+    &--badge::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: -2px;
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/hit-badge.svg");
+      background-repeat: no-repeat;
+    }
   }
-  td {
+  &__table-definition {
+    position: relative;
     background-color: $basic-white;
     color: $special-dark-cian;
     font-style: normal;
@@ -23,8 +39,29 @@
     border: $basic-light-gray 2px solid;
     border-top: none;
     text-align: left;
-    padding: 15px 20px 14px;
+    padding: 14px 19px 15px;
     text-transform: uppercase;
+    background-clip: padding-box;
+    &--available::after {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 228px;
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/yes.svg");
+      background-repeat: no-repeat;
+    }
+    &--unavailable::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 229px;
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/no.svg");
+      background-repeat: no-repeat;
+    }
   }
   &__tariff-name {
     display: block;
