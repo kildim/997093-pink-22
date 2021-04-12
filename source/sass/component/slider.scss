@@ -34,7 +34,6 @@
     width: 62px;
     display: flex;
     justify-content: space-between;
-    margin-top: 17px;
   }
 
   &__toggle {
@@ -74,7 +73,5 @@
       border-radius: 50% 50%;
       background-color: $basic-white;
     }
-    //border: $special-dark-cian 3px solid;
-    //opacity: 1;
   }
 }
