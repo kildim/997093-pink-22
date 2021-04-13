@@ -1,0 +1,23 @@
+.communication-mean {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-style: normal;
+  &__appeal {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__attribute-text {
+    color: $basic-red;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 19px;
+  }
+  &__attribute-ref {
+    color: inherit;
+  }
+}
