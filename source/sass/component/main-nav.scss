@@ -57,16 +57,20 @@
     transform: rotate(-45deg);
   }
 }
+
 .main-nav.main-nav--opened {
   background-color: $cian;
 }
+
 .main-nav.main-nav--opened .main-nav__menu-box {
   height: 69px;
   border-bottom: 1px solid $basic-black;
 }
+
 .main-nav--closed .page-header__site-nav-list {
   display: none;
 }
+
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }

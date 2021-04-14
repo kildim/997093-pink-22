@@ -1,13 +1,16 @@
 .page-header {
   background-color: $transparent-black;
+
   &__site-nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   &__site-nav-item {
     text-align: center;
   }
+
   &__site-nav-link {
     display: block;
     border-top: 1px solid transparentize($basic-white, 0.85);

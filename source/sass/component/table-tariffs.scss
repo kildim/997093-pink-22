@@ -4,6 +4,7 @@
   height: 277px;
   color: $basic-white;
   border-collapse: collapse;
+
   &__table-header {
     position: relative;
     background-color: $cian;
@@ -11,16 +12,19 @@
     padding-bottom: 14px;
     border-bottom: none;
     background-clip: padding-box;
+
     &:not(:first-child) {
       border-left: $basic-white 2px solid;
     }
+
     &:not(:last-child) {
       border-right: $basic-white 2px solid;
     }
+
     &--badge::after {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 0;
       left: -2px;
       width: 74px;
       height: 74px;
@@ -28,6 +32,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &__table-definition {
     position: relative;
     background-color: $basic-white;
@@ -42,6 +47,7 @@
     padding: 14px 19px 15px;
     text-transform: uppercase;
     background-clip: padding-box;
+
     &--available::after {
       content: "";
       position: absolute;
@@ -52,6 +58,7 @@
       background-image: url("../img/yes.svg");
       background-repeat: no-repeat;
     }
+
     &--unavailable::after {
       content: "";
       position: absolute;
@@ -63,6 +70,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &__tariff-name {
     display: block;
     font-style: normal;
@@ -70,6 +78,7 @@
     font-size: 16px;
     line-height: 24px;
   }
+
   &__tariff-rate {
     font-style: normal;
     font-weight: 300;

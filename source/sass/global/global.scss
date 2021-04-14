@@ -12,15 +12,18 @@ a {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   @include for-tablet-portrait-up {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   @include for-desktop-up {
     padding-left: 130px;
     padding-right: 130px;
   }
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
