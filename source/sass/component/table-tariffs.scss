@@ -6,7 +6,7 @@
   border-collapse: collapse;
   &__table-header {
     position: relative;
-    background-color: $special-dark-cian;
+    background-color: $cian;
     height: 83px;
     padding-bottom: 14px;
     border-bottom: none;
@@ -31,7 +31,7 @@
   &__table-definition {
     position: relative;
     background-color: $basic-white;
-    color: $special-dark-cian;
+    color: $cian;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

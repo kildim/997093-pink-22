@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  min-width: 180px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+
+  &__link {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50% 50%;
+    border: 3px solid $transparent-cian;
+
+    &--twitter {
+      background: url("../img/twitter.svg") 54% 51% / 17px 15px no-repeat;
+    }
+
+    &--facebook {
+      background: url("../img/facebook.svg") 52% 50% / 17px 17px no-repeat;
+    }
+
+    &--youtube {
+      background: url("../img/youtube.svg") 54% 51%/17px 18px no-repeat;
+    }
+  }
+}

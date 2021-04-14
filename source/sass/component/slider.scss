@@ -43,7 +43,7 @@
     height: 6px;
     border: none;
     border-radius: 50% 50%;
-    background-color: transparentize($special-dark-cian, 0.7);
+    background-color: transparentize($cian, 0.7);
     cursor: pointer;
     padding: 0;
     margin: 3px;
@@ -60,7 +60,7 @@
       left: -3px;
       border: none;
       border-radius: 50% 50%;
-      background-color: $special-dark-cian;
+      background-color: $cian;
     }
     &::after {
       content: "";
