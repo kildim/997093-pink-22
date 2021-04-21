@@ -10,11 +10,7 @@
   height: 733px;
   margin-bottom: -66px;
 
-  background-color: $dark-cian;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 100%;
+  background: url("../img/back-mobile.jpg") 50% 0 / 100% no-repeat, $dark-cian;
 
   &::after {
     content: "";
