@@ -13,23 +13,23 @@
     background: url("../img/phone-smile.png") no-repeat;
     left: calc(50% - 78px);
   }
+}
 
-  &__feature-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 0 12px 0;
-    text-align: center;
-  }
+.section-features__feature-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
 
-  &__feature-description {
-    margin: 0 auto 31px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    width: 280px;
-  }
+.section-features__feature-description {
+  margin: 0 auto 31px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  width: 280px;
 }

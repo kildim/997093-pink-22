@@ -22,65 +22,65 @@
     top: 175px;
     background-image: url("../img/hand-mobile.png");
   }
+}
 
-  &__lead {
-    margin: 89px 0 0 0;
-    padding: 0;
-    font-family: "Open Sans", "Verdana", sans-serif;
-    color: $basic-white;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 29px;
-    width: 225px;
-    text-align: center;
-  }
+.showcase__lead {
+  margin: 89px 0 0 0;
+  padding: 0;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: $basic-white;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  width: 225px;
+  text-align: center;
+}
 
-  &__default-ref {
-    display: block;
-    font-family: "Open Sans", "Verdana", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    border: 3px solid $basic-white;
-    box-sizing: border-box;
-    border-radius: 29px;
-    text-align: center;
-    color: $basic-white;
-    margin-top: 26px;
-    padding-top: 17px;
-    padding-bottom: 15px;
-    width: 280px;
-  }
+.showcase__default-ref {
+  display: block;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  border: 3px solid $basic-white;
+  box-sizing: border-box;
+  border-radius: 29px;
+  text-align: center;
+  color: $basic-white;
+  margin-top: 26px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  width: 280px;
+}
 
-  &__download-refs-box {
-    display: flex;
-    justify-content: space-between;
-    width: 204px;
-    align-items: flex-end;
-    margin-top: 31px;
-  }
+.showcase__download-refs-box {
+  display: flex;
+  justify-content: space-between;
+  width: 204px;
+  align-items: flex-end;
+  margin-top: 31px;
+}
 
-  &__refs-block {
-    width: 100%;
-    background-color: $dark-cian;
-    height: 271px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.showcase__refs-block {
+  width: 100%;
+  background-color: $dark-cian;
+  height: 271px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &__download-refs-description {
-    font-family: "Open Sans", "Verdana", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 24px;
-    color: $basic-white;
-    text-align: center;
-    width: 230px;
-    margin-top: 19px;
-  }
+.showcase__download-refs-description {
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: $basic-white;
+  text-align: center;
+  width: 230px;
+  margin-top: 19px;
 }
 

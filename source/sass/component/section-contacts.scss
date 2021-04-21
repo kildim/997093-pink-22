@@ -2,19 +2,19 @@
   background-color: $basic-white;
   padding-top: 41px;
   min-height: 369px;
+}
 
-  &__wrapper {
-    text-align: center;
-  }
+.section-contacts__wrapper {
+  text-align: center;
+}
 
-  &__text {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 120%;
-    margin: 0;
-  }
+.section-contacts__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 0;
+}
 
-  &__address {
-    margin-top: 33px;
-  }
+.section-contacts__address {
+  margin-top: 33px;
 }

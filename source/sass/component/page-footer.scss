@@ -2,18 +2,19 @@
   background-color: $basic-white;
   padding-top: 36px;
   height: 284px;
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__social {
-    margin-top: 36px;
-  }
-
-  &__copyright {
-    margin-top: 22px;
-  }
 }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__social {
+  margin-top: 36px;
+}
+
+.page-footer__copyright {
+  margin-top: 22px;
+}
+

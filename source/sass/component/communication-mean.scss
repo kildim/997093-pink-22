@@ -5,22 +5,21 @@
   justify-content: flex-start;
   font-family: "Open Sans", "Verdana", sans-serif;
   font-style: normal;
+}
+.communication-mean__appeal {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
 
-  &__appeal {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-  }
+.communication-mean__attribute-text {
+  color: $basic-red;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 19px;
+}
 
-  &__attribute-text {
-    color: $basic-red;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 19px;
-  }
-
-  &__attribute-ref {
-    color: inherit;
-  }
+.communication-mean__attribute-ref {
+  color: inherit;
 }

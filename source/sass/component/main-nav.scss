@@ -1,23 +1,21 @@
-.main-nav {
-  &__menu-box {
-    display: flex;
-    justify-content: space-between;
-    height: 66px;
-    align-items: center;
-  }
+.main-nav__menu-box {
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  align-items: center;
+}
 
-  &__pink-logo {
-    padding-top: 4px;
-  }
+.main-nav__pink-logo {
+  padding-top: 4px;
+}
 
-  &__toggle {
-    position: relative;
-    width: 50px;
-    height: 24px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-  }
+.main-nav__toggle {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .main-nav--closed .main-nav__toggle::before {
