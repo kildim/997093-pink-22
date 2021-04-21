@@ -1,8 +1,10 @@
 .page-body {
-  font-family: "Open Sans", "Verdana", sans-serif;
-  font-style: normal;
-  margin: 0;
-  background-color: $basic-white;
   min-width: 320px;
+  margin: 0;
   overflow-x: hidden;
+
+  font-style: normal;
+  font-family: "Open Sans", "Verdana", sans-serif;
+
+  background-color: $basic-white;
 }

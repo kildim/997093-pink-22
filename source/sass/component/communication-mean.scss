@@ -1,11 +1,13 @@
 .communication-mean {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
-  font-family: "Open Sans", "Verdana", sans-serif;
+  align-items: center;
+
   font-style: normal;
+  font-family: "Open Sans", "Verdana", sans-serif;
 }
+
 .communication-mean__appeal {
   font-weight: 700;
   font-size: 18px;
@@ -13,11 +15,12 @@
 }
 
 .communication-mean__attribute-text {
-  color: $basic-red;
+  margin-bottom: 19px;
+
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  margin-bottom: 19px;
+  color: $basic-red;
 }
 
 .communication-mean__attribute-ref {

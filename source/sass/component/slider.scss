@@ -1,12 +1,15 @@
 .slider {
-  color: $basic-black;
-  background-color: transparent;
-  font-family: "Open Sans", "Verdana", sans-serif;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+
+  font-family: "Open Sans", "Verdana", sans-serif;
+  text-align: center;
+  color: $basic-black;
+
+  background-color: transparent;
+}
+
 .slider__list {
   padding-left: 0;
 }
@@ -24,56 +27,63 @@
 }
 
 .slider__text {
+  margin-top: 13px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  margin-top: 13px;
 }
 
 .slider__toggles-box {
-  width: 62px;
   display: flex;
   justify-content: space-between;
+  width: 62px;
 }
 
 .slider__toggle {
-  display: block;
   position: relative;
+
+  display: block;
   width: 6px;
   height: 6px;
+  margin: 3px;
+  padding: 0;
+
+  background-color: transparentize($cian, 0.7);
   border: none;
   border-radius: 50% 50%;
-  background-color: transparentize($cian, 0.7);
   cursor: pointer;
-  padding: 0;
-  margin: 3px;
 
   &--current {
     background-color: $basic-white;
 
     &::before {
       content: "";
-      width: 12px;
-      height: 12px;
       position: absolute;
       top: -3px;
       left: -3px;
+
+      width: 12px;
+      height: 12px;
+
+      background-color: $cian;
       border: none;
       border-radius: 50% 50%;
-      background-color: $cian;
     }
 
     &::after {
       content: "";
-      width: 6px;
-      height: 6px;
       position: absolute;
       top: 0;
       left: 0;
+
+      width: 6px;
+      height: 6px;
+
+      background-color: $basic-white;
       border: none;
       border-radius: 50% 50%;
-      background-color: $basic-white;
     }
   }
 }
