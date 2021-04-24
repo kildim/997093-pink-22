@@ -1,3 +1,16 @@
 .form__name-field-box {
   background-color: $basic-white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.form__achievements-field-box {
+  background-color: $basic-light-gray;
+  padding-top: 39px;
+}
+
+.achievements-fields__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
