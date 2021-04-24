@@ -9,6 +9,7 @@
   font-family: "Open Sans", "Verdana", sans-serif;
 
   background-color: $basic-white;
+  box-shadow: 0px 7px 15px
 }
 
 .pop-up--show {
@@ -36,11 +37,18 @@
   margin: 24px 0 0 0;
 }
 
-.pop-up__footer {
+.pop-up__footer--success {
   margin: 35px 0 0 0;
   padding: 50px 20px;
 
   background-color: $basic-light-gray;
+}
+
+.pop-up__footer--failure {
+  margin: 15px 0 0 0;
+  padding: 28px 20px 50px;
+
+  background-color: $basic-white;
 }
 
 .pop-up__button {
