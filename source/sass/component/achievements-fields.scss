@@ -1,6 +1,6 @@
 .achievements-fields {
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  padding: 0 0 6px 0;
 
   font-family: "Open Sans", "Verdana", sans-serif;
 
@@ -20,7 +20,13 @@
   text-transform: uppercase;
 }
 
-.achievements-fields__item {
+.achievements-fields__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.achievements-fields__item:not(:last-child) {
   margin: 0 0 52px 0;
 }
 
@@ -41,7 +47,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -6px;
     left: 0;
 
     width: 35px;
