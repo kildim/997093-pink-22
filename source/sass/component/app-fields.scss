@@ -1,0 +1,58 @@
+.app-fields {
+  margin: 0 0 0 0;
+  padding: 0 0 6px 0;
+
+  font-family: "Open Sans", "Verdana", sans-serif;
+
+  border: none;
+}
+
+.app-fields__legend {
+  width: 252px;
+  margin: 0 auto 38px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $basic-red;
+  text-transform: uppercase;
+}
+
+.app-fields__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-fields__item:not(:last-child) {
+  margin: 0 0 45px 0;
+}
+
+.app-fields__checkbox:checked +  .app-fields__label-text::before {
+  background: url("../img/radio-selected.svg") no-repeat;
+}
+
+.app-fields__label-text {
+  position: relative;
+
+  padding: 0 0 0 70px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+
+    width: 42px;
+    height: 42px;
+
+    background: url("../img/radio.svg") no-repeat;
+  }
+}
