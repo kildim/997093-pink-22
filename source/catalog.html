@@ -236,7 +236,7 @@
     </section>
     <div class="catalog-slogan">
       <p class="catalog-slogan__text">
-        Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        Затмите их всех!<br>Выкладывайте все, что накопилось в<br>телефоне!
       </p>
     </div>
     <form class="image-editor">
@@ -250,19 +250,25 @@
           <button class="image-editor__tool-button image-editor__tool-button--active" type="button"
             aria-label="выбор инструмента обрезки">
           </button>
-          <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
+          <label aria-label="инструмент обрезка">
+            <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
+          </label>
         </div>
         <div class="image-editor__tool-box">
           <button class="image-editor__tool-button" type="button"
             aria-label="выбор инструмента заливки">
           </button>
-          <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
+          <label aria-label="инструмент заливка">
+            <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
+          </label>
         </div>
         <div class="image-editor__tool-box">
           <button class="image-editor__tool-button" type="button"
             aria-label="выбор инструмента экспозиции">
           </button>
-          <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
+          <label aria-label="инструмент экспозиция">
+            <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
+          </label>
         </div>
       </div>
       <div class="image-editor__buttons-wrapper">
