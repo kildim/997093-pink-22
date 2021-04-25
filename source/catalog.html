@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
     <nav class="main-nav main-nav--nojs main-nav--opened ">
       <div class="main-nav__menu-box content">
@@ -247,31 +247,35 @@
       </div>
       <div class="image-editor__tools">
         <div class="image-editor__tool-box">
-          <button class="image-editor__tool-button image-editor__tool-button--active" type="button"
+          <button class="image-editor__crop-tool image-editor__tool-button--active" type="button"
             aria-label="выбор инструмента обрезки">
           </button>
-          <label aria-label="инструмент обрезка">
-            <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
-          </label>
-        </div>
-        <div class="image-editor__tool-box">
-          <button class="image-editor__tool-button" type="button"
+          <button class="image-editor__fill-tool-button" type="button"
             aria-label="выбор инструмента заливки">
           </button>
-          <label aria-label="инструмент заливка">
-            <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
-          </label>
-        </div>
-        <div class="image-editor__tool-box">
-          <button class="image-editor__tool-button" type="button"
-            aria-label="выбор инструмента экспозиции">
+          <button class="image-editor__contrast-tool-button" type="button"
+            aria-label="выбор инструмента контрастность">
           </button>
-          <label aria-label="инструмент экспозиция">
-            <input type="range" class="image-editor__tool-slider" min="0" max="100" step="1" value="80">
+        </div>
+        <div class="image-editor__sliders-box">
+          <div class="image-editor__crop-slider-box flex-column-center">
+            <label aria-label="инструмент обрезка">
+              <input type="range" class="image-editor__tool-slider image-editor__crop-tool-slider" min="0" max="100" step="1" value="95">
+            </label>
+          </div>
+          <div class="image-editor__fill-slider-box flex-column-center">
+          <label aria-label="инструмент заливка" class="visually-hidden">
+            <input type="range" class="image-editor__tool-slider image-editor__fill-tool-slider" min="0" max="100" step="1" value="95">
           </label>
+          </div>
+          <div class="image-editor__contrast-slider-box flex-column-center">
+          <label aria-label="инструмент контрастность" class="visually-hidden">
+            <input type="range" class="image-editor__tool-slider image-editor__contrast-tool-slider" min="0" max="100" step="1" value="95">
+          </label>
+          </div>
         </div>
       </div>
-      <div class="image-editor__buttons-wrapper">
+      <div class="image-editor__buttons-box flex-column-center">
         <button class="image-editor__button image-editor__button--active" type="submit">Запостить</button>
         <button class="image-editor__button" type="reset">Отмена</button>
       </div>
