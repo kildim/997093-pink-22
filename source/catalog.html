@@ -12,10 +12,11 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="main-menu-box">
-      <a class="pink-logo-text" href="index.html" aria-label="Логотип сервиса Пинк">
-        <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8
+    <nav class="main-nav main-nav--nojs main-nav--opened ">
+      <div class="main-nav__menu-box content">
+        <a class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк">
+          <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8
         7.36H2.53v6.8A1.28 1.28 0 011.27 23 1.27 1.27 0 010 21.61V1.55zm8.07 10.97c3.7 0
         6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04zM21.6 1.39A1.28 1.28 0 0122.85
         0a1.27 1.27 0 011.27 1.39V21.6A1.28 1.28 0 0122.86 23a1.27 1.27 0 01-1.27-1.39V1.4zM30.67 1.42A1.28
@@ -25,53 +26,52 @@
         1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 011.21 1.26 1.29 1.29 0 01-.41.9l-7.95 7.9 8.57
         10.52c.23.26.35.6.35.94a1.31 1.31 0 01-1.34 1.28 1.23 1.23 0 01-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27
         1.27 0 01-1.26 1.27 1.26 1.26 0 01-1.26-1.27V1.4h-.01z" fill="#fff"
-          />
-        </svg>
-      </a>
-      <nav class="main-nav">
+            />
+          </svg>
+        </a>
         <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a>
-                конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <p class="page-header__lead">
-      Фотографии пользователей
-    <p>
+      </div>
+      <ul class="page-header__site-nav-list">
+        <li class="page-header__site-nav-item page-header__site-nav-item--active">
+          <a href="index.html" class="page-header__site-nav-link">
+            Главная
+          </a>
+        </li>
+        <li class="page-header__site-nav-item">
+          <a class="page-header__site-nav-link">
+            Фотографии
+          </a>
+        </li>
+        <li class="page-header__site-nav-item">
+          <a href="form.html" class="page-header__site-nav-link">
+            конкурс
+          </a>
+        </li>
+        <li class="page-header__site-nav-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__site-nav-link">
+            html academy
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Страница каталога</h1>
-    <div class="catalog-slogan">
-      <p class="catalog-slogan__text">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+    <section class="showcase showcase--distant-background-picture">
+      <h1 class="showcase__title">
+        Фотографии
+        пользователей
+      </h1>
+    </section>
+    <section class="terms">
+      <p class="terms__text">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как не хватает ваших?
       </p>
-    </div>
+    </section>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог фотографий</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <article class="product-card product-card--selected">
+          <article class="product-card--selected">
             <a class="product-card__img-wrapper" href="img/panorama-tablet.jpg">
               <img src="img/panorama-tablet.jpg" class="product-card__image"
                 alt="Висячий мост через ущелье" width="320" height="137">
@@ -83,12 +83,14 @@
               </p>
               <p class="product-card__full">
                 Прыгать или нет? Напишите в комментарии свой совет
-                и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                и<br>смотрите прямую трансляцию в перископе, задавайте&nbsp;свои&nbsp;вопросы!
               </p>
-              <button class="product-card__like-button" type="button"
-                aria-label="отметить как понравившееся фото либо снять отметку">
-              </button>
-              <span class="product-card__like-counter">Нравится: 215</span>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 215</span>
+              </div>
             </div>
           </article>
         </li>
@@ -106,10 +108,12 @@
               <p class="product-card__full">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <button class="product-card__like-button" type="button"
-                aria-label="отметить как понравившееся фото либо снять отметку">
-              </button>
-              <span class="product-card__like-counter">Нравится: 356</span>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 356</span>
+              </div>
             </div>
           </article>
         </li>
@@ -127,10 +131,12 @@
               <p class="product-card__full">
                 Соседи будут рады!
               </p>
-              <button class="product-card__like-button" type="button"
-                aria-label="отметить как понравившееся фото либо снять отметку">
-              </button>
-              <span class="product-card__like-counter">Нравится: 666</span>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 666</span>
+              </div>
             </div>
           </article>
         </li>
@@ -148,10 +154,12 @@
               <p class="product-card__full">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-              <button class="product-card__like-button" type="button"
-                aria-label="отметить как понравившееся фото либо снять отметку">
-              </button>
-              <span class="product-card__like-counter">Нравится: 215</span>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 215</span>
+              </div>
             </div>
           </article>
         </li>
@@ -163,16 +171,18 @@
             </a>
             <div class="product-card__annotation">
               <p class="product-card__summary">
-                <span class="product-card__author">Сергей</span><span
-                class="product-card__posted">(25 часов назад)</span>
+                <span class="product-card__author">Сергей</span>
+                <span class="product-card__posted">(25 часов назад)</span>
               </p>
               <p class="product-card__full">
                 Самая кубанская в мире!
               </p>
-              <button class="product-card__like-button" type="button"
-                aria-label="отметить как понравившееся фото либо снять отметку">
-              </button>
-              <span class="product-card__like-counter">Нравится: 4</span>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 4</span>
+              </div>
             </div>
           </article>
         </li>
@@ -184,16 +194,18 @@
             </a>
             <div class="product-card__annotation">
               <p class="product-card__summary">
-                <span class="product-card__author">Максим</span><span
-                class="product-card__posted">(40 часов назад)</span>
+                <span class="product-card__author">Максим</span>
+                <span class="product-card__posted">(40 часов назад)</span>
               </p>
               <p class="product-card__full">
                 Где снег-то?
               </p>
-              <button class="product-card__like-button" type="button"
-                aria-label="отметить как понравившееся фото либо снять отметку">
-              </button>
-              <span class="product-card__like-counter">Нравится: 150</span>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 150</span>
+              </div>
             </div>
           </article>
         </li>
@@ -205,16 +217,18 @@
             </a>
             <div class="product-card__annotation">
               <p class="product-card__summary">
-                <span class="product-card__author">Надежда</span><span
-                class="product-card__posted">(45 часов назад)</span>
+                <span class="product-card__author">Надежда</span>
+                <span class="product-card__posted">(45 часов назад)</span>
               </p>
               <p class="product-card__full">
                 Всем GM и взаимные лайки!
               </p>
-              <button class="product-card__like-button" type="button"
-                aria-label="отметить как понравившееся фото либо снять отметку">
-              </button>
-              <span class="product-card__like-counter">Нравится: 2560</span>
+              <div class="product-card__like-box">
+                <button class="product-card__like-button" type="button"
+                  aria-label="отметить как понравившееся фото либо снять отметку">
+                </button>
+                <span class="product-card__like-counter">Нравится: 2560</span>
+              </div>
             </div>
           </article>
         </li>
@@ -308,5 +322,6 @@
     </span>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
