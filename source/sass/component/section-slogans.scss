@@ -4,7 +4,7 @@
   padding-top: 39px;
 
   background-color: $basic-white;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='32'%3E%3Cpolygon points='0,32 320,0 320,32' fill='#{$basic-light-gray-svg}' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' width='320' height='32'%3E%3Cpolygon points='0,32 320,0 320,32' fill='#{$basic-light-gray-svg}' /%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 32px;
