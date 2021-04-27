@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
@@ -257,20 +258,20 @@
             aria-label="выбор инструмента контрастность">
           </button>
         </div>
-        <div class="image-editor__sliders-box">
-          <div class="image-editor__crop-slider-box flex-column-center">
-            <label aria-label="инструмент обрезка">
-              <input type="range" class="image-editor__tool-slider image-editor__crop-tool-slider" min="0" max="100" step="1" value="95">
+        <div class="image-editor__sliders-box flex-column-center">
+          <div class="image-editor__crop-slider-box">
+            <label aria-label="инструмент обрезка" class="image-editor__slider-label">
+              <input type="range" class="image-editor__tool-slider image-editor__crop-tool-slider" min="0" max="100" step="1" value="85">
             </label>
           </div>
           <div class="image-editor__fill-slider-box flex-column-center">
-          <label aria-label="инструмент заливка" class="visually-hidden">
-            <input type="range" class="image-editor__tool-slider image-editor__fill-tool-slider" min="0" max="100" step="1" value="95">
+          <label aria-label="инструмент заливка" class="image-editor__slider-label visually-hidden">
+            <input type="range" class="image-editor__tool-slider image-editor__fill-tool-slider" min="0" max="100" step="1" value="85">
           </label>
           </div>
           <div class="image-editor__contrast-slider-box flex-column-center">
-          <label aria-label="инструмент контрастность" class="visually-hidden">
-            <input type="range" class="image-editor__tool-slider image-editor__contrast-tool-slider" min="0" max="100" step="1" value="95">
+          <label aria-label="инструмент контрастность" class="image-editor__slider-label visually-hidden">
+            <input type="range" class="image-editor__tool-slider image-editor__contrast-tool-slider" min="0" max="100" step="1" value="85">
           </label>
           </div>
         </div>
