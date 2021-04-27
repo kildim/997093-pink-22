@@ -5,7 +5,6 @@ var sass = require('gulp-sass');
 // const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const csscomb = require('gulp-csscomb');
 const sync = require("browser-sync").create();
 
 // Styles
