@@ -1,4 +1,4 @@
-.communication-mean {
+.communication {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,13 +8,13 @@
   font-family: "Open Sans", "Verdana", sans-serif;
 }
 
-.communication-mean__appeal {
+.communication__appeal {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
 }
 
-.communication-mean__attribute-text {
+.communication__attribute-text {
   margin-bottom: 19px;
 
   font-weight: 300;
@@ -23,6 +23,6 @@
   color: $basic-red;
 }
 
-.communication-mean__attribute-ref {
+.communication__attribute-ref {
   color: inherit;
 }

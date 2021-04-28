@@ -1,0 +1,21 @@
+.reviews {
+  height: 364px;
+
+  font-style: normal;
+  font-size: 24px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: $basic-black;
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' width='320' height='20'%3E%3Cpolygon points='0,20 320,0 320,20' fill='#{$basic-light-gray-svg}' /%3E%3C/svg%3E") bottom / 100% 20px no-repeat $basic-white;
+}
+
+.reviews__list {
+  margin: 0 0 0 0;
+  padding-top: 40px;
+
+  list-style: none;
+}
+
+.reviews__slider-position {
+  margin-top: 17px;
+}

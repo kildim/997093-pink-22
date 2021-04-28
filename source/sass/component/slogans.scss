@@ -1,4 +1,4 @@
-.section-slogans {
+.slogans {
   height: 208px;
   margin: 0;
   padding-top: 39px;
@@ -10,13 +10,13 @@
   background-size: 100% 32px;
 }
 
-.section-slogans__wrapper {
+.slogans__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.section-slogans__slogan {
+.slogans__slogan {
   margin: 0 0 29px 0;
 
   font-style: normal;
