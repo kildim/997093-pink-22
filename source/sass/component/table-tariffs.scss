@@ -25,17 +25,19 @@
     border-right: $basic-white 2px solid;
   }
 
-  &--badge::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -2px;
+  &--badge {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2px;
 
-    width: 74px;
-    height: 74px;
+      width: 74px;
+      height: 74px;
 
-    background-image: url("../img/hit-badge.svg");
-    background-repeat: no-repeat;
+      background-image: url("../img/hit-badge.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
