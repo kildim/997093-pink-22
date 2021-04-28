@@ -30,7 +30,7 @@
   margin: 0 0 45px 0;
 }
 
-.app-fields__checkbox:checked +  .app-fields__label-text::before {
+.app-fields__checkbox:checked + .app-fields__label-text::before {
   background: url("../img/radio-selected.svg") no-repeat;
 }
 

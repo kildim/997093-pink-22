@@ -30,7 +30,7 @@
   margin: 0 0 52px 0;
 }
 
-.achievements-fields__checkbox:checked +  .achievements-fields__label-text::before {
+.achievements-fields__checkbox:checked + .achievements-fields__label-text::before {
   background: url("../img/checkbox-checked.svg") no-repeat;
 }
 

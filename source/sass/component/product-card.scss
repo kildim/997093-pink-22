@@ -10,6 +10,7 @@
 .product-card--selected {
   position: relative;
   padding-bottom: 20px;
+
   &::after {
     content: " ";
     position: absolute;
@@ -45,9 +46,6 @@
   margin: 0 0 0 0;
 }
 
-.product-card__summary {
-  margin: 0 0 0 0;
-}
 .product-card__author {
   margin: 0 0 0 17px;
   font-style: normal;
@@ -81,6 +79,7 @@
   margin-top: 11px;
   margin-left: 17px;
 }
+
 .product-card__like-button {
   border: none;
   width: 13px;

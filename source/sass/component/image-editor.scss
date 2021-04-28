@@ -56,7 +56,7 @@
 }
 
 .image-editor__tool-slider {
-  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   background: transparent;
 
@@ -74,7 +74,7 @@
   }
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     border: 2px solid $basic-red;
     border-radius: 50%;
     height: 14px;
