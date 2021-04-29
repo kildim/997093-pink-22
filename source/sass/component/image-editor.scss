@@ -1,0 +1,137 @@
+.image-editor {
+  background-color: $basic-light-gray;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 42px;
+}
+
+.image-editor__tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-editor__tool-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 38px;
+  width: 206px;
+}
+
+.image-editor__crop-tool {
+  border: none;
+  width: 44px;
+  height: 44px;
+  background: url("../img/crop.svg") 0 0 / 44px 44px $basic-light-gray;
+  cursor: pointer;
+}
+
+.image-editor__fill-tool-button {
+  border: none;
+  width: 48px;
+  height: 43px;
+  background: url("../img/fill.svg") 0 0 / 48px 43px $basic-light-gray;
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+.image-editor__contrast-tool-button {
+  border: none;
+  width: 32px;
+  height: 32px;
+  background: url("../img/contrast.svg") 0 0 / 32px 32px $basic-light-gray;
+  cursor: pointer;
+  margin-left: 35px;
+}
+
+.image-editor__slider-label {
+  width: 240px;
+  display: block;
+  height: 24px;
+}
+
+.image-editor__tool-slider {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+
+  border-color: transparent;
+  color: transparent;
+
+  &::-moz-range-thumb {
+    border: 2px solid $basic-red;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background: $basic-white;
+    cursor: pointer;
+    margin-top: -6px;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    border: 2px solid $basic-red;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    background: $basic-white;
+    cursor: pointer;
+    margin-top: -6px;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 240px;
+    height: 2px;
+    cursor: pointer;
+    background: $basic-black;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+  &::-moz-range-track {
+    width: 240px;
+    height: 2px;
+    cursor: pointer;
+    background: $basic-black;
+    box-sizing: border-box;
+  }
+}
+
+.image-editor__sliders-box {
+  margin-top: 30px;
+  border-bottom: 2px solid $transparent-cian;
+  width: 320px;
+  padding-bottom: 22px;
+}
+
+.image-editor__button {
+  border: 3px solid;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 15px 10px;
+  text-transform: capitalize;
+  width: 280px;
+
+  &--upload {
+    color: $basic-red;
+  }
+
+  &--cancel {
+    margin-top: 13px;
+    color: $transparent-cian;
+  }
+}
+
+.image-editor__buttons-box {
+  margin-top: 37px;
+}

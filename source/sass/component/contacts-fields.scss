@@ -1,0 +1,54 @@
+.contacts-fields {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+
+  font-family: "Open Sans", "Verdana", sans-serif;
+
+  border: none;
+}
+
+.contacts-fields__legend {
+  display: none;
+  width: 252px;
+  margin: 0 auto 42px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $basic-red;
+  text-transform: uppercase;
+}
+
+.contacts-fields__label {
+  display: block;
+  margin: 0 0 17px 0;
+}
+
+.contacts-fields__label-text {
+  margin: 0 0 0 23px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-red;
+}
+
+.contacts-fields__text-input {
+  display: block;
+  width: 236px;
+  height: 59px;
+  margin: 5px 0 0 0;
+  padding: 0 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  border: 2px solid $basic-smoky;
+  border-radius: 3px;
+}
+

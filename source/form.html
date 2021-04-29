@@ -2,19 +2,22 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch-icon-iphone.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
-    <div class="main-menu-box">
-      <a class="pink-logo-text" href="index.html" aria-label="Логотип сервиса Пинк">
-        <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8
+    <nav class="main-nav main-nav--nojs main-nav--opened ">
+      <div class="main-nav__menu-box content">
+        <a class="main-nav__pink-logo" aria-label="Логотип сервиса Пинк">
+          <svg width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1.55A1.29 1.29 0 011.26.26h7.13c5.06 0 8.39 2.7 8.39 7.13v.06c0 4.85-4.04 7.36-8.8
         7.36H2.53v6.8A1.28 1.28 0 011.27 23 1.27 1.27 0 010 21.61V1.55zm8.07 10.97c3.7 0
         6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H2.6v9.88l5.48.04zM21.6 1.39A1.28 1.28 0 0122.85
         0a1.27 1.27 0 011.27 1.39V21.6A1.28 1.28 0 0122.86 23a1.27 1.27 0 01-1.27-1.39V1.4zM30.67 1.42A1.28
@@ -24,141 +27,168 @@
         1.39v12.3L71.23.54c.26-.27.62-.43 1-.45a1.27 1.27 0 011.21 1.26 1.29 1.29 0 01-.41.9l-7.95 7.9 8.57
         10.52c.23.26.35.6.35.94a1.31 1.31 0 01-1.34 1.28 1.23 1.23 0 01-1-.58L63.3 11.86l-4.83 4.85v4.88a1.27
         1.27 0 01-1.26 1.27 1.26 1.26 0 01-1.26-1.27V1.4h-.01z" fill="#fff"
-          />
-        </svg>
-      </a>
-      <nav class="main-nav">
+            />
+          </svg>
+        </a>
         <button class="main-nav__toggle" type="button" aria-label="открыть главное меню"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>
-                конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <p class="page-header__lead">Конкурс на самое безбашенное путешествие с Пинк
-    <p>
+      </div>
+      <ul class="page-header__site-nav-list">
+        <li class="page-header__site-nav-item page-header__site-nav-item--active">
+          <a href="index.html" class="page-header__site-nav-link">
+            Главная
+          </a>
+        </li>
+        <li class="page-header__site-nav-item">
+          <a href="catalog.html" class="page-header__site-nav-link">
+            Фотографии
+          </a>
+        </li>
+        <li class="page-header__site-nav-item">
+          <a class="page-header__site-nav-link">
+            конкурс
+          </a>
+        </li>
+        <li class="page-header__site-nav-item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__site-nav-link">
+            html academy
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Страница формы заявки участника</h1>
-    <p class="page-slogan">
-      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-    </p>
+    <section class="showcase showcase--distant-background-picture">
+      <h1 class="showcase__title">
+        Конкурс на самое
+        безбашенное
+        путешествие с Пинк
+      </h1>
+    </section>
+    <section class="terms">
+      <p class="terms__text">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+    </section>
     <form class="form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
       <h2 class="visually-hidden">Анкета участника</h2>
-      <div class="form__name-field-box">
+      <div class="form__name-field-box content">
         <fieldset class="name-fields">
           <legend class="visually-hidden form__legend">Поля ввода имени</legend>
           <label class="name-fields__label">
-            ФАМИЛИЯ:
-            <input type="text" name="family-name" placeholder="Укажите фамилию &#42;" aria-label="обязательное поле">
+            <span class="name-fields__label-text">ФАМИЛИЯ:</span>
+            <input class="name-fields__text-input" type="text" name="family-name" placeholder="Укажите фамилию &#42;"
+              aria-label="обязательное поле">
           </label>
           <label class="name-fields__label">
-            ИМЯ:
-            <input type="text" name="first-name" placeholder="Введите ваше имя &#42;" aria-label="обязательное поле">
+            <span class="name-fields__label-text">ИМЯ:</span>
+            <input class="name-fields__text-input" type="text" name="first-name" placeholder="Введите ваше имя &#42;"
+              aria-label="обязательное поле">
           </label>
           <label class="name-fields__label">
-            ОТЧЕСТВО:
-            <input type="text" name="patronymic-name" placeholder="Ну и отчество тоже">
+            <span class="name-fields__label-text">ОТЧЕСТВО:</span>
+            <input class="name-fields__text-input" type="text" name="patronymic-name" placeholder="Ну и отчество тоже">
           </label>
         </fieldset>
       </div>
-      <div class="form__achievements-field-box">
+      <div class="form__achievements-field-box content">
         <fieldset class="achievements-fields">
           <legend class="achievements-fields__legend form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="achievements-fields__list">
             <li class="achievements-fields__item">
               <label class="achievements-fields__label">
-                Сделал селфи с акулой
-                <input type="checkbox" name="selfie-shark" class="visually-hidden" checked>
+                <input type="checkbox" name="selfie-shark" class="achievements-fields__checkbox visually-hidden"
+                  checked>
+                <span class="achievements-fields__label-text">Сделал селфи с акулой</span>
               </label>
+            <li class="achievements-fields__item">
               <label class="achievements-fields__label">
-                Обгорел на пляже
-                <input type="checkbox" name="sunburn" class="visually-hidden" checked>
+                <input type="checkbox" name="sunburn" class="achievements-fields__checkbox visually-hidden" checked>
+                <span class="achievements-fields__label-text">Обгорел на пляже</span>
               </label>
+            </li>
+            <li class="achievements-fields__item">
               <label class="achievements-fields__label">
-                Видел Чака Норриса
-                <input type="checkbox" name="norris-seen" class="visually-hidden">
+                <input type="checkbox" name="norris-seen" class="achievements-fields__checkbox visually-hidden">
+                <span class="achievements-fields__label-text">Видел Чака Норриса</span>
               </label>
+            </li>
+            <li class="achievements-fields__item">
               <label class="achievements-fields__label">
-                Накупил сувениров
-                <input type="checkbox" name="junk-shopping" class="visually-hidden">
+                <input type="checkbox" name="junk-shopping" class="achievements-fields__checkbox visually-hidden">
+                <span class="achievements-fields__label-text">Накупил сувениров</span>
               </label>
+            </li>
+            <li class="achievements-fields__item">
               <label class="achievements-fields__label">
-                Удержал башню
-                <input type="checkbox" name="tower-holder" class="visually-hidden" checked>
+                <input type="checkbox" name="tower-holder" class="achievements-fields__checkbox visually-hidden"
+                  checked>
+                <span class="achievements-fields__label-text">Удержал башню</span>
               </label>
+            </li>
+            <li class="achievements-fields__item">
               <label class="achievements-fields__label">
-                Разгромил отель
-                <input type="checkbox" name="hotel-terminator" class="visually-hidden">
+                <input type="checkbox" name="hotel-terminator" class="achievements-fields__checkbox visually-hidden">
+                <span class="achievements-fields__label-text">Разгромил отель</span>
               </label>
             </li>
           </ul>
         </fieldset>
       </div>
-      <div class="form__contacts-box">
+      <div class="form__contacts-fields-box content">
         <fieldset class="contacts-fields">
-          <legend class="contacts-fields-legend form__legend visually-hidden"></legend>
+          <legend class="contacts-fields__legend form__legend">контактная информация</legend>
           <label class="contacts-fields__label">
-            НОМЕР ТЕЛЕФОНА
-            <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+            <span class="contacts-fields__label-text">НОМЕР ТЕЛЕФОНА</span>
+            <input class="contacts-fields__text-input" type="tel" name="phone" placeholder="Номер, пожалуйста">
           </label>
           <label class="contacts-fields__label">
-            АДРЕС ПОЧТЫ
-            <input type="email" name="phone" placeholder="Введите почту &#42;" aria-label="обязательное поле">
+            <span class="contacts-fields__label-text">АДРЕС ПОЧТЫ</span>
+            <input class="contacts-fields__text-input" type="email" name="phone" placeholder="Введите почту &#42;"
+              aria-label="обязательное поле">
           </label>
         </fieldset>
       </div>
-      <div class="form__app-box">
+      <div class="form__app-fields-box content">
         <fieldset class="app-fields">
           <legend class="app-fields__legend  form__legend">С каким приложением путешествовали?</legend>
-          <label class="app-fields__label">
-            Pink для iOS
-            <input type="radio" name="app" value="ios" class="visually-hidden" checked>
-          </label>
-          <label class="app-fields__label">
-            Pink на Android
-            <input type="radio" name="app" value="android" class="visually-hidden">
-          </label>
-          <label class="app-fields__label">
-            Windows Phone
-            <input type="radio" name="app" value="windows-phone" class="visually-hidden">
-          </label>
+          <ul class="app-fields__list">
+            <li class="app-fields__item">
+              <label class="app-fields__label">
+                <input type="radio" name="app" value="ios" class="app-fields__checkbox visually-hidden" checked>
+                <span class="app-fields__label-text">Pink для iOS</span>
+              </label>
+            </li>
+            <li class="app-fields__item">
+              <label class="app-fields__label">
+                <input type="radio" name="app" value="android" class="app-fields__checkbox visually-hidden">
+                <span class="app-fields__label-text">Pink на Android</span>
+              </label>
+            </li>
+            <li class="app-fields__item">
+              <label class="app-fields__label">
+                <input type="radio" name="app" value="windows-phone" class="app-fields__checkbox visually-hidden">
+                <span class="app-fields__label-text">Windows Phone</span>
+              </label>
+            </li>
+          </ul>
         </fieldset>
       </div>
-      <div class="form__impressions-box">
+      <div class="form__impressions-fields-box content">
         <fieldset class="impressions-fields">
-          <legend class="impressions-fields-legend form__legend">опишите свои эмоции</legend>
-          <label class="impressions-fields__label visually-hidden" for="form__textarea">
-            опишите свои эмоции
+          <legend class="impressions-fields__legend form__legend">опишите свои эмоции</legend>
+          <label class="impressions-fields__label">
+            <span class="impressions-fields__label-text visually-hidden">опишите свои эмоции</span>
+            <textarea class="impressions-fields__text-input"
+              placeholder="Можно прям в красках, не стесняясь в выражениях" rows="10" cols="5"></textarea>
           </label>
-          <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" id="form__textarea"></textarea>
-
         </fieldset>
       </div>
-      <button type="submit" class="form__submit-btn">Отправить форму</button>
-      <p class="form__footnote">
-        <span class="form__footnote-tag">&#42;</span> &#8212; обязательные поля
-      </p>
+      <div class="form__submit-btn-box content">
+        <button type="submit" class="form__submit-btn">Отправить форму</button>
+        <p class="form__footnote">
+          <span class="form__footnote-tag">&#42;</span> &#8212; обязательные поля
+        </p>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
@@ -212,25 +242,26 @@
     </span>
     </div>
   </footer>
-  <section class="pop-up success-pop-up">
+  <section class="pop-up">
     <h2 class="visually-hidden">Всплывающее окно успешной отправки формы</h2>
     <p class="pop-up__message">Ваша заявка отправлена</p>
-    <p class="pop-up__message-wide">
-      Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+    <p class="pop-up__message-wide content">
+      Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.
     </p>
-    <div class="pop-up__footer success-pop-up__footer">
+    <div class="pop-up__footer pop-up__footer--success content">
       <button class="pop-up__button">закрыть окно</button>
     </div>
   </section>
-  <section class="pop-up failure-pop-up">
+  <section class="pop-up">
     <h2 class="visually-hidden">Всплывающее возникновения ошибки при отправке формы</h2>
     <p class="pop-up__message">Что-то пошло не так!</p>
     <p class="pop-up__message-wide">
       Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
-    <div class="pop-up__footer failure-pop-up__footer">
+    <div class="pop-up__footer pop-up__footer--failure content">
       <button class="pop-up__button">ок</button>
     </div>
   </section>
+  <script src="js/main.js"></script>
 </body>
 </html>

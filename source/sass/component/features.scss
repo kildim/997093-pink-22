@@ -1,0 +1,41 @@
+.features {
+  position: relative;
+
+  height: 704px;
+  padding-top: 50px;
+
+  background-color: $basic-light-gray;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 477px;
+    left: calc(50% - 78px);
+
+    width: 320px;
+    height: 277px;
+
+    background: url("../img/phone-smile.png") no-repeat;
+  }
+}
+
+.features__feature-title {
+  margin: 0 0 12px 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.features__feature-description {
+  width: 280px;
+  margin: 0 auto 31px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}

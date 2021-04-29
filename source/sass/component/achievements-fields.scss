@@ -1,0 +1,58 @@
+.achievements-fields {
+  margin: 0 0 0 0;
+  padding: 0 0 6px 0;
+
+  font-family: "Open Sans", "Verdana", sans-serif;
+
+  border: none;
+}
+
+.achievements-fields__legend {
+  width: 252px;
+  margin: 0 auto 42px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $basic-red;
+  text-transform: uppercase;
+}
+
+.achievements-fields__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.achievements-fields__item:not(:last-child) {
+  margin: 0 0 52px 0;
+}
+
+.achievements-fields__checkbox:checked + .achievements-fields__label-text::before {
+  background: url("../img/checkbox-checked.svg") no-repeat;
+}
+
+.achievements-fields__label-text {
+  position: relative;
+
+  padding: 0 0 0 59px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background: url("../img/checkbox.svg") no-repeat;
+  }
+}

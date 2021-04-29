@@ -1,0 +1,77 @@
+.form {
+  font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+.form__name-field-box {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: $basic-white;
+}
+
+.form__achievements-field-box {
+  padding-top: 39px;
+  padding-bottom: 42px;
+
+  background-color: $basic-light-gray;
+}
+
+.form__contacts-fields-box {
+  padding-top: 30px;
+  padding-bottom: 26px;
+
+  background-color: $basic-white;
+}
+
+.form__app-fields-box {
+  padding-top: 39px;
+  padding-bottom: 40px;
+
+  background-color: $basic-light-gray;
+}
+
+.form__impressions-fields-box {
+  padding-top: 39px;
+  padding-bottom: 10px;
+
+  background-color: $basic-white;
+}
+
+.form__submit-btn-box {
+  padding-top: 22px;
+  padding-bottom: 4px;
+
+  background-color: $basic-white;
+}
+
+.form__submit-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  background-color: $basic-green;
+  border: none;
+  border-radius: 3px;
+}
+
+.form__footnote {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-top: 34px;
+}
+
+.form__footnote-tag {
+  color: $basic-red;
+}

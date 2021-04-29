@@ -1,0 +1,28 @@
+.communication {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-style: normal;
+  font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+.communication__appeal {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.communication__attribute-text {
+  margin-bottom: 19px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $basic-red;
+}
+
+.communication__attribute-ref {
+  color: inherit;
+}

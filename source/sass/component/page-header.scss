@@ -1,0 +1,31 @@
+.page-header {
+  background-color: $transparent-black;
+}
+
+.page-header__site-nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-header__site-nav-item {
+  text-align: center;
+}
+
+.page-header__site-nav-link {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  border-top: 1px solid transparentize($basic-white, 0.85);
+  border-bottom: 1px solid $basic-black;
+}

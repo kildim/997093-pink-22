@@ -1,0 +1,39 @@
+@import "common/variables";
+@import "global/fonts.scss";
+@import "common/mixins";
+@import "global/global.scss";
+
+//TODO
+//только для этапа разработки
+@import "utils/debug";
+
+// component
+@import "component/page";
+@import "component/page-body";
+@import "component/page-header";
+@import "component/main-nav";
+@import "component/showcase.scss";
+@import "component/slogans";
+@import "component/features";
+@import "component/reviews";
+@import "component/slider";
+@import "component/tariffs";
+@import "component/table-tariffs";
+@import "component/contacts";
+@import "component/communication";
+@import "component/map";
+@import "component/page-footer";
+@import "component/social";
+@import "component/copyright";
+@import "component/terms";
+@import "component/form";
+@import "component/name-fields";
+@import "component/achievements-fields";
+@import "component/contacts-fields";
+@import "component/app-fields";
+@import "component/impressions-fields";
+@import "component/pop-up";
+@import "component/catalog";
+@import "component/product-card";
+@import "component/catalog-slogan";
+@import "component/image-editor";
