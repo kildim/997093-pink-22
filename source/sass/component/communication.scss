@@ -6,9 +6,36 @@
 
   font-style: normal;
   font-family: "Open Sans", "Verdana", sans-serif;
+
+  &:last-child {
+    @include for-desktop-up {
+      order: 2;
+
+      grid-column: auto;
+    }
+
+    order: 4;
+
+    grid-column: 1 / 3;
+  }
+
+  &:first-child {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 3;
+  }
 }
 
 .communication__appeal {
+  @include for-tablet-portrait-up {
+    margin-bottom: 3px;
+  }
+  @include for-desktop-up {
+    margin-bottom: 21px;
+  }
+
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;

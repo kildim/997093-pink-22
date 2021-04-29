@@ -1,7 +1,7 @@
+@import "global/fonts";
 @import "common/variables";
-@import "global/fonts.scss";
 @import "common/mixins";
-@import "global/global.scss";
+@import "global/global";
 
 //TODO
 //только для этапа разработки
@@ -37,3 +37,4 @@
 @import "component/product-card";
 @import "component/catalog-slogan";
 @import "component/image-editor";
+@import "component/round-diagram";

@@ -1,10 +1,23 @@
 .tariffs {
-  height: 380px;
+  @include for-tablet-portrait-up {
+    min-height: 288px;
+    padding-top: 56px;
+  }
+  @include for-desktop-up {
+    min-height: 283px;
+    padding-bottom: 95px;
+  }
+
+  min-height: 380px;
   padding-top: 81px;
 
   background-color: $basic-light-gray;
 }
 
 .tariffs__slider-position {
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+
   margin-top: 40px;
 }
