@@ -48,7 +48,7 @@
     &::after {
       @include for-tablet-portrait-up {
         top: 184px;
-        left: calc(50% - 454px);
+        left: calc(50% - 330px);
 
         width: 650px;
         height: 546px;
@@ -57,7 +57,7 @@
       }
       @include for-desktop-up {
         top: 208px;
-        right: 4px;
+        left: calc(50% - 454px);
 
         width: 1050px;
         height: 645px;
