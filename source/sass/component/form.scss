@@ -1,8 +1,18 @@
 .form {
+  @include for-tablet-portrait-up {
+    display: grid;
+    margin-bottom: 43px;
+  }
   font-family: "Open Sans", "Verdana", sans-serif;
 }
 
 .form__name-field-box {
+  @include for-tablet-portrait-up {
+    padding-top: 73px;
+    padding-bottom: 0;
+    order: 1;
+  }
+
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -10,6 +20,12 @@
 }
 
 .form__achievements-field-box {
+  @include for-tablet-portrait-up {
+    order: 4;
+    background-color: $basic-white;
+    padding-top: 33px;
+  }
+
   padding-top: 39px;
   padding-bottom: 42px;
 
@@ -17,6 +33,11 @@
 }
 
 .form__contacts-fields-box {
+  @include for-tablet-portrait-up {
+    order: 3;
+    padding-top: 17px;
+  }
+
   padding-top: 30px;
   padding-bottom: 26px;
 
@@ -24,6 +45,12 @@
 }
 
 .form__app-fields-box {
+  @include for-tablet-portrait-up {
+    order: 2;
+    padding-top: 5px;
+    background-color: $basic-white;
+  }
+
   padding-top: 39px;
   padding-bottom: 40px;
 
@@ -31,6 +58,11 @@
 }
 
 .form__impressions-fields-box {
+  @include for-tablet-portrait-up {
+    order: 5;
+    padding-top: 15px;
+  }
+
   padding-top: 39px;
   padding-bottom: 10px;
 
@@ -38,6 +70,14 @@
 }
 
 .form__submit-btn-box {
+  @include for-tablet-portrait-up {
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    align-items: center;
+  }
+
   padding-top: 22px;
   padding-bottom: 4px;
 
@@ -45,6 +85,10 @@
 }
 
 .form__submit-btn {
+  @include for-tablet-portrait-up {
+    height: 62px;
+    width: 300px;
+  }
   display: block;
   width: 100%;
   padding: 16px 20px;
@@ -62,6 +106,10 @@
 }
 
 .form__footnote {
+  @include for-tablet-portrait-up {
+    margin-top: 14px;
+  }
+
   text-align: center;
   font-style: normal;
   font-weight: 400;

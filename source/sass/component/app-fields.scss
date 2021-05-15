@@ -1,4 +1,10 @@
 .app-fields {
+  @include for-tablet-portrait-up {
+    border: 2px solid $basic-smoky;
+    border-radius: 1px;
+    padding: 0 0 60px;
+  }
+
   margin: 0 0 0 0;
   padding: 0 0 6px 0;
 
@@ -8,6 +14,12 @@
 }
 
 .app-fields__legend {
+  @include for-tablet-portrait-up {
+    width: 320px;
+    margin: 0 auto 48px;
+    padding: 0 24px 0;
+  }
+
   width: 252px;
   margin: 0 auto 38px;
 
@@ -21,6 +33,10 @@
 }
 
 .app-fields__list {
+  @include for-tablet-portrait-up {
+    margin: 0 0 0 57px;
+  }
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -35,6 +51,10 @@
 }
 
 .app-fields__label-text {
+  @include for-tablet-portrait-up {
+    padding: 0 0 0 62px;
+  }
+
   position: relative;
 
   padding: 0 0 0 70px;

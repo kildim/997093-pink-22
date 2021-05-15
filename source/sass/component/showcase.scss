@@ -39,7 +39,8 @@
   }
 
   &--distant-background-picture {
-    height: 236px;
+    height: 440px;
+    padding: 0;
 
     background-size: 100%;
   }
@@ -204,6 +205,14 @@
 }
 
 .showcase__title {
+  @include for-tablet-portrait-up {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    margin: 177px 0 0;
+    width: 620px;
+  }
+
   width: 230px;
   margin: 93px 0 0 0;
   padding: 0;
