@@ -62,7 +62,7 @@
 }
 
 .contacts-fields__text-input {
-  @include  for-tablet-portrait-up {
+  @include for-tablet-portrait-up {
     position: relative;
 
     width: 456px;
@@ -86,7 +86,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Open Sans","Verdana",sans-serif;
+  font-family: "Open Sans", "Verdana", sans-serif;
 
   border: 2px solid $basic-smoky;
   border-radius: 3px;
