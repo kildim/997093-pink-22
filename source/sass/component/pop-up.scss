@@ -1,4 +1,9 @@
 .pop-up {
+  @include for-tablet-portrait-up {
+    left: calc(50% - 230px);
+    width: 460px;
+  }
+
   position: fixed;
   top: calc(50vh - 190px);
   left: calc(50% - 160px);
@@ -13,10 +18,23 @@
 }
 
 .pop-up--show {
+  @include for-tablet-portrait-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   display: block;
 }
 
 .pop-up__message {
+  @include for-tablet-portrait-up {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 230px;
+  }
   margin-top: 47px;
 
   font-style: normal;
@@ -28,6 +46,14 @@
 }
 
 .pop-up__message-wide {
+  @include for-tablet-portrait-up {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    //width: 300px;
+    width: 310px;
+    margin: 22px 0 0;
+  }
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -38,6 +64,11 @@
 }
 
 .pop-up__footer--success {
+  @include for-tablet-portrait-up {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
   margin: 35px 0 0 0;
   padding: 50px 20px;
 
@@ -45,6 +76,11 @@
 }
 
 .pop-up__footer--failure {
+  @include for-tablet-portrait-up {
+    margin: 5px 0 0;
+    padding: 29px 20px 52px;
+  }
+
   margin: 15px 0 0 0;
   padding: 28px 20px 50px;
 
@@ -52,6 +88,11 @@
 }
 
 .pop-up__button {
+  @include for-tablet-portrait-up {
+    width: 300px;
+    margin: 0 auto;
+  }
+
   display: block;
   width: 100%;
   padding: 16px 20px;
