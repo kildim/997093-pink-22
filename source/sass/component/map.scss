@@ -1,4 +1,8 @@
 .map {
+  @include for-desktop-up {
+    min-height: 500px;
+  }
+
   position: relative;
 
   min-height: 200px;
@@ -6,6 +10,14 @@
   background: url("../img/map-mobile.jpg") 50% 50% / 100% no-repeat, $basic-white;
 
   iframe {
+    @include for-tablet-portrait-up {
+      height: 370px;
+    }
+    @include for-desktop-up {
+      height: 498px;
+    }
+
+    display: block;
     width: 100%;
 
     background: transparent;
@@ -13,6 +25,17 @@
   }
 
   &::after {
+    @include for-tablet-portrait-up {
+      height: 70px;
+
+      background-size: 100% 70px;
+    }
+    @include for-desktop-up {
+      height: 100px;
+
+      background-size: 100% 100px;
+    }
+
     content: "";
     position: absolute;
     top: 0;

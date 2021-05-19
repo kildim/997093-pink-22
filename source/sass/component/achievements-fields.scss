@@ -1,4 +1,9 @@
 .achievements-fields {
+  @include for-tablet-portrait-up {
+    padding: 0 58px 54px;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
   margin: 0 0 0 0;
   padding: 0 0 6px 0;
 
@@ -8,6 +13,11 @@
 }
 
 .achievements-fields__legend {
+  @include for-tablet-portrait-up {
+    width: 432px;
+    margin: 0 auto 47px;
+  }
+
   width: 252px;
   margin: 0 auto 42px;
 
@@ -31,6 +41,10 @@
 }
 
 .achievements-fields__checkbox:checked + .achievements-fields__label-text::before {
+  @include for-tablet-portrait-up {
+    width: 40px;
+    height: 40px;
+  }
   background: url("../img/checkbox-checked.svg") no-repeat;
 }
 
@@ -45,6 +59,11 @@
   line-height: 30px;
 
   &::before {
+    @include for-tablet-portrait-up {
+      width: 40px;
+      height: 40px;
+    }
+
     content: "";
     position: absolute;
     top: -6px;

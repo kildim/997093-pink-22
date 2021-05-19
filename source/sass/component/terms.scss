@@ -1,4 +1,8 @@
 .terms {
+  @include for-tablet-portrait-up {
+    height: auto;
+  }
+
   height: 100px;
   padding: 44px 0 0 0;
 
@@ -6,6 +10,13 @@
 }
 
 .terms__text {
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 47px;
+    width: 520px;
+  }
+
   width: 273px;
   margin: 0 auto;
   padding: 0;
@@ -16,4 +27,13 @@
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+.terms__text--additional {
+  @include for-tablet-portrait-up {
+    display: inline;
+    font: inherit;
+  }
+
+  display: none;
 }

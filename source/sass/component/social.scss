@@ -1,7 +1,14 @@
 .social {
+  @include for-tablet-portrait-up {
+    padding: 0 15px 0 0;
+  }
+  @include for-desktop-up {
+    padding: 0 0 0 6px;
+  }
+
   display: flex;
   justify-content: space-between;
-  min-width: 180px;
+  min-width: 187px;
   padding: 0;
 
   list-style: none;
@@ -16,14 +23,18 @@
   border-radius: 50% 50%;
 
   &--twitter {
-    background: url("../img/twitter.svg") 54% 51% / 17px 15px no-repeat;
+    background: url("../img/twitter.svg") 50% 50% no-repeat;
   }
 
   &--facebook {
-    background: url("../img/facebook.svg") 52% 50% / 17px 17px no-repeat;
+    background: url("../img/facebook.svg") 50% 50%  no-repeat;
   }
 
   &--youtube {
-    background: url("../img/youtube.svg") 54% 51%/17px 18px no-repeat;
+    background: url("../img/youtube.svg") 50% 50% no-repeat;
   }
+}
+
+.social__item {
+  padding: 0 3px 0 3px;
 }

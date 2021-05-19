@@ -1,4 +1,9 @@
 .impressions-fields {
+  @include for-tablet-portrait-up {
+    padding: 0 58px 34px;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 
@@ -8,6 +13,11 @@
 }
 
 .impressions-fields__legend {
+  @include for-tablet-portrait-up {
+    width: 257px;
+    margin: 0 auto 32px;
+  }
+
   width: 252px;
   margin: 0 auto 11px;
 
@@ -36,6 +46,16 @@
 }
 
 .impressions-fields__text-input {
+  @include for-tablet-portrait-up {
+    margin: 5px auto 0;
+    width: 456px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Open Sans", "Verdana", sans-serif;
+    padding: 13px 19px 5px;
+  }
   display: block;
   width: 236px;
   height: 171px;

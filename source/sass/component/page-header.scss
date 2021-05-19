@@ -14,6 +14,16 @@
 }
 
 .page-header__site-nav-link {
+  @include for-desktop-up {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+
+    border: none;
+  }
+
   display: block;
   padding-top: 14px;
   padding-bottom: 16px;

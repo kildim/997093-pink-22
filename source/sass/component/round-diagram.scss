@@ -1,0 +1,84 @@
+.round-diagram {
+  @include for-tablet-portrait-up {
+    display: block;
+    height: 330px;
+    padding-top: 54px;
+
+    background: url("../img/timer.svg") 20px 54px / 238px 276px no-repeat $basic-white;
+  }
+  @include for-desktop-up {
+    height: 374px;
+
+    background-color: $basic-light-gray;
+    background-position: calc(50% - 320px) 15px;
+    background-size: 298px 345px;
+  }
+
+  display: none;
+
+  font-family: "Open Sans", "Verdana", sans-serif;
+}
+
+.round-diagram__description-box {
+  @include for-desktop-up {
+    padding: 52px 0 0 500px;
+    margin: 0 auto;
+    width: 700px;
+  }
+
+  padding: 41px 0 0 50%;
+
+  text-align: left;
+}
+
+.round-diagram__title {
+  @include for-desktop-up {
+    width: 350px;
+    margin: 0 0 23px;
+  }
+
+  width: 150px;
+  margin: 0 0 10px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.round-diagram__text {
+  @include for-desktop-up {
+    width: 530px;
+    margin: 0 0 30px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  width: 297px;
+  margin: 0 0 10px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.round-diagram__ref {
+  @include for-desktop-up {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $basic-red;
+
+  text-decoration-line: underline;
+}

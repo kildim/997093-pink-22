@@ -1,4 +1,5 @@
 .name-fields {
+
   margin: 0 0 0 0;
   padding: 0;
 
@@ -8,11 +9,22 @@
 }
 
 .name-fields__label {
+  @include for-tablet-portrait-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 52px 0;
+  }
+
   display: block;
   margin: 0 0 17px 0;
 }
 
 .name-fields__label-text {
+  @include for-tablet-portrait-up {
+    margin: 0 18px 0 0;
+  }
+
   margin: 0 0 0 23px;
 
   font-style: normal;
@@ -23,6 +35,11 @@
 }
 
 .name-fields__text-input {
+  @include for-tablet-portrait-up {
+    margin: 0;
+    width: 100%;
+  }
+
   display: block;
   width: 236px;
   height: 59px;
@@ -33,6 +50,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
 
   border: 2px solid $basic-smoky;
   border-radius: 3px;
