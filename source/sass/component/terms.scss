@@ -17,6 +17,10 @@
     width: 520px;
   }
 
+  @include for-desktop-up {
+    width: 757px;
+  }
+
   width: 273px;
   margin: 0 auto;
   padding: 0;
