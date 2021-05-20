@@ -5,10 +5,10 @@
     border: 2px solid $basic-smoky;
     border-radius: 1px;
   }
-
   @include for-desktop-up {
-    padding: 0 0 0 0;
     display: grid;
+    padding: 0 0 0 0;
+
     grid-template-columns: 50% 50%;
   }
 
@@ -25,7 +25,6 @@
     display: block;
     margin: 0 auto 31px;
   }
-
   @include for-desktop-up {
     margin: 0 auto 28px;
   }
@@ -51,19 +50,18 @@
     align-items: flex-start;
     margin: 0 0 23px;
   }
-
   @include for-desktop-up {
     margin: 0 0 13px 58px;
   }
+
+  display: block;
+  margin: 0 0 17px 0;
 
   &--email {
     @include for-desktop-up {
       margin: 0 0 13px 37px;
     }
   }
-
-  display: block;
-  margin: 0 0 17px 0;
 }
 
 .contacts-fields__label-text {
@@ -95,8 +93,7 @@
       background: url("../img/envelop.svg") right / 59px 59px no-repeat;
     }
   }
-
-  @include  for-desktop-up {
+  @include for-desktop-up {
     width: 330px;
   }
 

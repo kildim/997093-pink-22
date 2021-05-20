@@ -1,8 +1,9 @@
 .app-fields {
   @include for-tablet-portrait-up {
+    padding: 0 0 60px;
+
     border: 2px solid $basic-smoky;
     border-radius: 1px;
-    padding: 0 0 60px;
   }
 
   margin: 0 0 0 0;
@@ -36,14 +37,14 @@
   @include for-tablet-portrait-up {
     margin: 0 0 0 57px;
   }
-
   @include for-desktop-up {
     margin: 0 0 0 72px;
   }
 
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .app-fields__item:not(:last-child) {

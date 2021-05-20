@@ -11,12 +11,12 @@
 
 .terms__text {
   @include for-tablet-portrait-up {
+    width: 520px;
+    margin-top: 47px;
+
     font-size: 18px;
     line-height: 30px;
-    margin-top: 47px;
-    width: 520px;
   }
-
   @include for-desktop-up {
     width: 757px;
   }
@@ -24,18 +24,19 @@
   width: 273px;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
 
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
+  text-align: center;
 }
 
 .terms__text--additional {
   @include for-tablet-portrait-up {
     display: inline;
+
     font: inherit;
   }
 

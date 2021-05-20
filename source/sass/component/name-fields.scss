@@ -1,5 +1,4 @@
 .name-fields {
-
   margin: 0 0 0 0;
   padding: 0;
 
@@ -15,9 +14,8 @@
     align-items: center;
     margin: 0 0 52px 0;
   }
-
   @include for-desktop-up {
-    margin: 0px 0 53px;
+    margin: 0 0 53px;
   }
 
   display: block;
@@ -40,8 +38,8 @@
 
 .name-fields__text-input {
   @include for-tablet-portrait-up {
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
 
   display: block;
