@@ -16,6 +16,10 @@
     margin: 0 0 52px 0;
   }
 
+  @include for-desktop-up {
+    margin: 0px 0 53px;
+  }
+
   display: block;
   margin: 0 0 17px 0;
 }

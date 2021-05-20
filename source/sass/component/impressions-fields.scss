@@ -4,6 +4,11 @@
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
+
+  @include for-desktop-up {
+    padding: 0 58px 26px;
+  }
+
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 
@@ -16,6 +21,10 @@
   @include for-tablet-portrait-up {
     width: 257px;
     margin: 0 auto 32px;
+  }
+
+  @include for-desktop-up {
+    margin: 0 auto 29px;
   }
 
   width: 252px;
@@ -56,6 +65,13 @@
     font-family: "Open Sans", "Verdana", sans-serif;
     padding: 13px 19px 5px;
   }
+
+  @include for-desktop-up {
+    width: 100%;
+    box-sizing: border-box;
+    height: 128px;
+  }
+
   display: block;
   width: 236px;
   height: 171px;
